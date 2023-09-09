@@ -6,13 +6,13 @@
 #    By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/27 20:21:53 by jareste-          #+#    #+#              #
-#    Updated: 2023/08/27 20:23:09 by jareste-         ###   ########.fr        #
+#    Updated: 2023/09/09 19:24:29 by jareste-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = PhoneBook
 
-SRCS = PhoneBook.cpp Contact.cpp
+SRCS = main.cpp PhoneBook.cpp Contact.cpp 
 
 CC = c++
 RM = rm -f
