@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 00:10:32 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/09 21:13:31 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/10 19:05:37 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ int	main(void)
 		else if (input == "EXIT")
 			return (0);
 		else
-			std::cout << "Invalid instruction please try 'ADD', 'SEARCH' or 'EXIT'";
-		std::cout << std::endl;
+			std::cout << ERROR_MSG << std::endl;
 	}
 }
