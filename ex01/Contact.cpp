@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 20:21:23 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/09 21:29:32 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/10 19:58:47 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,12 @@ void	Contact::add_new(Contact *contact)
 		input.erase();
 		std::cout << "Phone Number:";
 		std::getline(std::cin, input);
+		for (unsigned int j = 0; j < input.length(); j++)
+			if (input[j] < '0' || input[j] > '9')
+			{
+				std::cout << "'Phone Number' only accepts numbers." << std::endl;
+				input.erase();
+			}
 	}
 	contact->phone_number = input;
 	input.erase();
@@ -55,7 +61,6 @@ void	Contact::add_new(Contact *contact)
 		std::getline(std::cin, input);
 	}
 	contact->darkest_secret = input;
-
 }
 
 //aux funct
