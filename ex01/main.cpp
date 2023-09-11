@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 00:10:32 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/10 19:14:30 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/11 02:19:45 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	main(void)
 		if (input == "ADD")
 			phonebook.add_contact(contact);
 		else if (input == "SEARCH")
-			std::cout << "SEARCH";
+			phonebook.search_contact(contact);
 		else if (input == "EXIT")
 			return (0);
 		else

@@ -6,7 +6,7 @@
 #    By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/27 20:21:53 by jareste-          #+#    #+#              #
-#    Updated: 2023/09/10 20:01:11 by jareste-         ###   ########.fr        #
+#    Updated: 2023/09/11 02:19:41 by jareste-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRCS = main.cpp PhoneBook.cpp Contact.cpp
 
 CC = c++
 RM = rm -f
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -g -fsanitize=address
 
 %.o: %.cpp Makefile
 		@${CC} ${CFLAGS} -c $< -o $@
