@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 20:20:56 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/11 03:27:20 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/11 22:54:27 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,5 @@ class PhoneBook
 		std::string		fill_content(std::string str);
 		std::string		get_number(void);
 };
-
 
 #endif

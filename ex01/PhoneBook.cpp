@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 20:21:06 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/11 03:29:21 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/11 22:58:16 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,8 @@ void	PhoneBook::search_contact(Contact contact)
 	{
 		input.erase();
 		std::cout << "Index: ";
-		std::getline(std::cin, input);
+		if (!std::getline(std::cin, input))
+			return ;
 		if (input.length() == 0)
 			return ;
 		index = input[0] - '0' - 1;

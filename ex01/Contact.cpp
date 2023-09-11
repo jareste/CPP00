@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 20:21:23 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/11 03:29:06 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/11 23:05:20 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ std::string	fill_content(std::string str)
 	{
 		input.erase();
 		std::cout << std::setw(16) << std::left << str;
-		std::getline(std::cin, input);
+		if (!std::getline(std::cin, input))
+			break ;
 	}
 	return (input);
 }
@@ -41,7 +42,8 @@ std::string	get_number(void)
 	{
 		input.erase();
 		std::cout << std::setw(16) << "Phone Number:";
-		std::getline(std::cin, input);
+		if (!std::getline(std::cin, input))
+			break ;
 		for (unsigned int j = 0; j < input.length(); j++)
 			if (input[j] < '0' || input[j] > '9')
 			{
