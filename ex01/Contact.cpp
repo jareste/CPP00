@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 20:21:23 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/11 02:19:34 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/11 03:29:06 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,8 @@ void	Contact::add_new(Contact *contact)
 
 void	Contact::print_all(Contact *contact, unsigned int j)
 {
+	if (contact->first_name.length() < 1)
+		return ;
 	std::cout << "# ";
 	std::cout << std::left << std::setw(8) << std::left << (j + 1) << "|";
 	if (contact->first_name.size() > 10)
