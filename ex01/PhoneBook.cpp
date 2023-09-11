@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 20:21:06 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/11 02:19:42 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/11 02:34:30 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	PhoneBook::search_contact(Contact contact)
 	std::cout << "Enter an index for detailed information." << std::endl;
 	std::cout << "Leave it empty to return to main menu." << std::endl;
 	index = -1;
-	while ((index < 0 || index > 8) || input.length() != 1)
+	while ((index < 0 || index > 7 || input.length() != 1))
 	{
 		input.erase();
 		std::cout << "Index: ";
@@ -57,7 +57,7 @@ void	PhoneBook::search_contact(Contact contact)
 		if (input.length() == 0)
 			return ;
 		index = input[0] - '0' - 1;
-		if (index < 0 || index > 8)
+		if (index < 0 || index > 7)
 			std::cout << "Invalid index." << std::endl;
 	}
 	contact.print_contact(&_contact[index]);
